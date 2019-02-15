@@ -4,7 +4,7 @@ module HidApi
   class HidError < StandardError; end
 
   extend FFI::Library
-  ffi_lib 'hidapi'
+  ffi_lib 'hidapi-libusb'
 
   autoload :Device,     'hid_api/device'
   autoload :DeviceInfo, 'hid_api/device_info'
